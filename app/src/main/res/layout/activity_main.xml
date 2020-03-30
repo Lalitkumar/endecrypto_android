@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F7E7CE"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:text="Encrypt/Decrypt Text"
+        app:layout_constraintStart_toStartOf="@+id/textToAction"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textToAction"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Enter Text to Encrypt/Decrypt"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/decrypt"
+        app:layout_constraintStart_toStartOf="@+id/textToAction" />
+
+    <Button
+        android:id="@+id/decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:text="Decrypt"
+        app:layout_constraintStart_toEndOf="@+id/encrypt"
+        app:layout_constraintTop_toBottomOf="@+id/textToAction" />
+
+    <EditText
+        android:id="@+id/textActioned"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:hint="Encrypted/Decrypted Text"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="Developed and Designed By Neha and Team.All Rights Reserved."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/keyVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="anaayathakareapl"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textActioned"
+        app:layout_constraintEnd_toStartOf="@+id/textActioned"
+        app:layout_constraintStart_toStartOf="@+id/textActioned"
+        app:layout_constraintTop_toTopOf="@+id/textActioned" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="165dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

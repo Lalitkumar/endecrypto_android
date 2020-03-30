@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7E7CE"
+    tools:context=".AboutActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="523dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textMultiLine"
+        android:text="This application is used to encrypt and decrypt data using AES algorithm.Advanced Encryption Standard (AES), encryption is most popular and widely used technology for encryption and decryption of data. Nowadays AES technology is not only used in mobile applications but is also used in web applications for providing the security for sensitive data in banking and financial organizations.
+AES is a symmetric block cipher which is very hard to crack and generates strong keys for encryption, which can be decrypted by only providing the same keys
+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
